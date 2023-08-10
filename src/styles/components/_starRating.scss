@@ -1,0 +1,12 @@
+.star-rating {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.star-filled {
+    color: rgb(255,96,96);
+}
+  
+.star-empty {
+    color: lightgray;
+}

@@ -1,0 +1,36 @@
+.containerError{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255,96,96);
+    align-items: center;
+
+    @media (max-width: 992px) {
+        
+  
+    }
+
+    .errorNumber{
+        font-size: 300px;
+        font-weight: 900;
+        @media (max-width: 992px) {
+            font-size: 100px;
+        }
+
+    }
+    .msgError{
+        font-size: 25px;
+        margin-bottom: 120px;
+        @media (max-width: 992px) {
+            width: 60%;
+            text-align: center;    
+            margin-top: 0px;
+            font-size: 17px;
+
+        }
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255,96,96);
+        text-decoration: underline;
+    }
+}

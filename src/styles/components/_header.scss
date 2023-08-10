@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3%;
+  margin-top: 1%;
+  font-size: 20px;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 14px;
+    }
+    @media (max-width: 340px) {
+      justify-content: center;
+      font-size: 17px;
+
+    }
+    .logoContainer{
+      display: flex;
+      flex-direction: row;
+      width: 210px;
+      height: 68px;
+      @media (max-width: 992px) {
+        // width: 46%;
+        width: 145px;
+        height: 47px;
+        // margin-right: 20px;
+      }
+
+    }
+    img {
+      // display: flex;
+      // flex-direction: row;
+      width: 100%;
+      height: 100%;
+      // @media (max-width: 992px) {
+      //   width: ;
+      // }
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      justify-content: right;
+      // margin: 30px;
+      width: 310px;
+      @media (max-width: 992px) {
+        width: 54%;
+        // padding: 0;
+      }
+      @media (max-width: 340px) {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+
+  
+      }
+      
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        color: black;
+        @media (max-width: 992px) {
+          padding: 0px;      
+    
+        }
+      }
+  
+      a {
+        text-decoration: none;
+        padding: 10px;
+        @media (max-width: 992px) {
+          // padding: 0;
+        }
+  
+        li {
+          color: rgb(255,96,96);
+          transition: 0.2s;
+          cursor: pointer;
+  
+          &:hover {
+            color: rgb(255,96,96);
+          }
+        }
+      }
+  
+      .nav-active {
+        position: relative;
+  
+        &::after {
+          content: "";
+          height: 2px;
+          width: 0;
+          background: rgb(255,96,96);
+          position: absolute;
+          border-radius: 10px;
+          bottom: 7px;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-animation: anim 0.3s ease forwards;
+          animation: anim 0.6s ease forwards;
+  
+          @-webkit-keyframes anim {
+            to {
+              width: 100%;
+            }
+          }
+          @keyframes anim {
+            to {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
