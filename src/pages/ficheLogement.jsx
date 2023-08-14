@@ -37,7 +37,7 @@ function Appartments() {
                     <ImageSlider pictures={dataAppartments.pictures} /> {/* Affichez le diaporama d'images */}
                 </div>
 
-                <section>
+                <section className="infoAndCollapse">
                     <div className="info">
                         <div className="infoLeft">
                             <h1>{dataAppartments.title}</h1>

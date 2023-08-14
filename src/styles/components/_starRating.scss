@@ -1,7 +1,4 @@
-.star-rating {
-    display: flex;
-    justify-content: flex-end;
-}
+
   
 .star-filled {
     color: rgb(255,96,96);
@@ -9,4 +6,18 @@
   
 .star-empty {
     color: lightgray;
+}
+.containerStar{
+    display: flex;
+    justify-content: flex-end;
+    .star-rating{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        @media (max-width: 992px) {
+            width: 125px;
+        }
+       
+    }
+
 }

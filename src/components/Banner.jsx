@@ -19,7 +19,7 @@ function Banner({ textContent }) {
       <img src={bannerImage} alt="Bannière Kasa" title="Bannière Kasa" className='bannerImg' width="" height="223px"/>
 
       {/* Affichez le contenu textuel dans un élément <h2> avec la classe 'textBanner' */}
-      <h2 className='textBanner'>{textContent}</h2>
+      <h1 className='textBanner'>{textContent}</h1>
     </section>
   );
 }

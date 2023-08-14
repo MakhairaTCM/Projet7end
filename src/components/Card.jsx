@@ -14,7 +14,7 @@ function Card({ id, cover, title }) {
                 
                 <img src={cover} alt={title} title={title} className='cardImg' />
                 
-                <h3>{title}</h3>
+                <h2>{title}</h2>
             </Link>
         </article>
     );
